@@ -34,4 +34,10 @@ router.post('/forms', (request, response) => {
     });
 });
 
+router.post('/test', (request, response) => {
+    const body = request.body;
+    console.log(body);
+    response.send(body);
+});
+
 module.exports = router;
